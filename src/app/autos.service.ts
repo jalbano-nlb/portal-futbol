@@ -8,6 +8,6 @@ export class AutosService {
   constructor() { }
 
   getColor(){
-    return 'azul'
+    return 'azulito'
   }
 }
