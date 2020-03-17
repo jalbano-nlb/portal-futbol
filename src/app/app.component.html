@@ -3,7 +3,38 @@
     <button nbButton status="success" size="tiny" (click)="toggle()">ToggleNoalba</button>
   </nb-layout-header>
 
-  <nb-sidebar tag="left"></nb-sidebar>
+  <nb-sidebar tag="left">
+    <nb-accordion>
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Opción 1
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          SubOpción 1.1
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Opción 2
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          SubOpción 2.1
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    
+      <nb-accordion-item disabled="true">
+        <nb-accordion-item-header>
+          Edit
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    </nb-accordion>
+  </nb-sidebar>
 
   <nb-layout-column class="colored-column-warning">Layout Content</nb-layout-column>
 </nb-layout>
